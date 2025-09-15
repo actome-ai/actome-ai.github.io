@@ -21,7 +21,27 @@ This repository hosts the **source code** of the ActomeAI portal website, built 
 
 ## 🚀 How It Works
 
-1. Write or update content in the `main` branch.  
+1. Write or update content in the `main` branch.
 2. Generate the static site:  
    ```bash
    hexo clean && hexo generate
+   ```
+3. Deploy to gh-pages:
+  ```bash
+   hexo deploy
+  ```
+4. GitHub Pages will update the website automatically.
+
+## 📖 About ActomeAI
+
+ActomeAI is an initiative to build an open platform for multimodal animal behavior analysis, combining neuroscience, AI, and reproducible research.    
+The website serves as the portal for our vision, projects, documentation, and community updates.
+
+## ⚠️ Notes
+
+- Do not push the public/ folder or node_modules/ into the main branch.
+- All website updates should go through main → build → deploy → gh-pages.
+- If gh-pages is accidentally overwritten, simply regenerate and redeploy.
+
+© 2025 ActomeAI. All rights reserved.
+Open Science × Responsible AI
